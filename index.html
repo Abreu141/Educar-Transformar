@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educar é Transformar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #b18ed6;
+      color: #333;
+    }
+
+    header {
+      background-image: url("header-bg.png.png");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(96, 37, 159, 0.514);
+      z-index: 0;
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      z-index: 1;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      color: #5f259f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd500;
+    }
+
+    main {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h2 {
+      color: #5f259f;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #5f259f;
+    }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #ffd500;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #e5c200;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #5f259f;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #ffd500;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e5c200;
+    }
+
+    @media (max-width: 768px) {
+      header, nav, main {
+        padding: 20px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Educar é Transformar" />
+    <h1>Educar é Transformar</h1>
+  </header>
+
+  <nav>
+    <a href="#curriculo">Currículo</a>
+    <a href="#linkedin">LinkedIn</a>
+    <a href="#plataformas">Plataformas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="curriculo" style="background-image: url('https://source.unsplash.com/featured/?resume');">
+      <h2>Como montar um currículo profissional</h2>
+      <p>Montar um currículo bem estruturado é essencial para causar uma boa primeira impressão. Siga estas dicas:</p>
+      <ul>
+        <li>Inclua seus dados pessoais, objetivo, formação, experiências e habilidades.</li>
+        <li>Use uma linguagem clara e direta.</li>
+        <li>Revise para evitar erros de português.</li>
+      </ul>
+      <a class="download-button" href="#">Baixar modelo de currículo</a>
+    </section>
+
+    <section id="linkedin" style="background-image: url('https://source.unsplash.com/featured/?linkedin');">
+      <h2>Como criar um perfil no LinkedIn e usá-lo de forma estratégica</h2>
+      <p>O LinkedIn é uma poderosa ferramenta para networking e busca de oportunidades. Para criar um bom perfil:</p>
+      <ul>
+        <li>Use uma foto profissional e um título claro.</li>
+        <li>Descreva suas experiências e conquistas.</li>
+        <li>Conecte-se com profissionais da sua área de interesse.</li>
+        <li>Compartilhe conteúdos relacionados à sua área para mostrar engajamento.</li>
+      </ul>
+    </section>
+
+    <section id="plataformas" style="background-image: url('https://source.unsplash.com/featured/?jobsearch');">
+      <h2>Plataformas com vagas de Jovem Aprendiz</h2>
+      <p>Esses são os sites mais recomendados para se candidatar:</p>
+      <ul>
+        <li><a href="https://www.ciee.org.br" target="_blank">CIEE</a> – Centro de Integração Empresa-Escola</li>
+        <li><a href="https://www.nube.com.br" target="_blank">NUBE</a> – Núcleo Brasileiro de Estágios</li>
+        <li><a href="https://www.vagas.com.br" target="_blank">Vagas.com</a> – Vagas para aprendizes e estagiários</li>
+        <li><a href="https://www.linkedin.com/jobs" target="_blank">LinkedIn Vagas</a> – Encontre vagas com o seu perfil</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Fale com a gente</h2>
+      <p>Tem dúvidas ou quer mais informações? Preencha o formulário abaixo:</p>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Educar é Transformar. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
